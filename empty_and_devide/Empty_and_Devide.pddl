@@ -1,0 +1,8 @@
+(define (domain empty and devide)
+    (:objects ?m - int ?n - int)
+    (type:normal)
+    (:tercondition (and (= ?m 1) (= ?n 1)))
+    (:action takeM :parameters (?x ?y)
+        :precondition (>= ?m 2)
+        :effect (assign (?m) (?x)) (assgin (?n) (?y)))
+)
